@@ -300,9 +300,7 @@ i#menu-trigger {
 #mobileNav .nav-content > a:hover {
     color: white !important;
 }
-.server {
-    /* transform: scale(1.5) !important; */
-}
+
 
 .server:hover {
     background: #ffeb3b !important;
@@ -346,7 +344,7 @@ a.shop.inline-block.px-0.px-4.py-2.mx-2.text-left.md\:px-0.hover\:text-indigo-80
     transition: .12s all ease;
 }
 
-.page-wrapper {}
+
 
 .vote-links > a:hover {
     background: #ffeb3b !important;
