@@ -8,7 +8,56 @@
     <link href="aos.css" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="standard_7.gif" />
-    <link href="style.css" rel="stylesheet">
+  
+    <style>
+        .tutorial-step {
+            display: flex;
+            color: white;
+            gap: 75px;
+        }
+        .tutorial-step h1 > span:first-child {
+            background: #6b728054;
+            display: block;
+            max-width: 100px;
+            text-align: center;
+            padding: 7px;
+            border-radius: 100px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #b8bec9 !important;
+        }
+        .tutorial-steps .image {
+            width: 52%;
+            position: relative;
+        }
+        .tutorial-steps .text {
+            flex: 1;
+            align-self: center;
+        }
+        .tutorial-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 75px;
+        }
+        .tutorial-steps .text h1 {
+            font-size: 30px;
+        }
+        .tutorial-steps .text h1 > span {color: #ffeb3b;}
+        .tutorial-steps p {
+            margin-top: 15px;
+            color: #6b7280;
+            line-height: 26px;
+        }
+        .tutorial-step.right {
+            text-align: right;
+        }
+        .tutorial-step.right h1 > span:first-child {
+            margin-left: auto;
+        }
+        .tutorial-step:not(.right) .text {
+            order: 2;
+        }
+        </style>  <link href="style.css" rel="stylesheet">
 <link rel="stylesheet" href="animate.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -40,38 +89,67 @@
 
             <a href="index.html"><img class="h-40 animate__animated animate__infinite animate__slower animate__pulse" src="standard_7png.png"></a>
             <div class="hidden md:block max-w-lg mx-auto mt-6 text-sm text-center text-gray-500 md:mt-10 sm:text-base md:max-w-xl md:text-md">
-                <div id="copy" data-clipboard-text="GALAXYVERSE.DE" class="players-inner" data-tippy-content="Click to copy"><i class="mdi mdi-shimmer"></i> JOIN <span id="player-count"class="text-yellow-300">0</span> PLAYERS ON <span class="text-white">GALAXYVERSE.DE</span></div>
+                <div onclick="location.href='https://www.youtube.com/watch?v=pPTwHZMJKbg&ab_channel=MinecraftIron'" id="copy" class="players-inner" data-tippy-content="Anleitung ansehen"><img style="width: 20px;" src="2949874.png"></img>Konsolenspieler hier klickenn!</div> <br>
             </div>
         </div>
     </div>
 </section>
-<section id="servers" data-aos="fade" data-aos-delay="1800">
-    <div class="mx-auto relative z-5 flex flex-col md:flex-wrap md:flex-row gap-4 justify-center items-center text-white">
-        <a href="link" class="server">
-            <div class="icon"><img src="https://cdn-icons-png.flaticon.com/128/2451/2451655.png"></div>
-            <h1>Citybuild</h1>
-            <p><span>Hier klicken</span></p>
-        </a>
-        <div class="divider"></div>
-        <a href="link" class="server">
-            <span><i class="mdi mdi-fire"></i></span>
-            <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/5497/5497346.png"></div>
-            <h1>SkyBlock</h1>
-            <p><span>Hier klicken</span></p>
-        </a>
-        <div class="divider"></div>
-        <a href="#" class="server">
-            <div class="icon"><img src="wHNRIBw.png"></div>
-            <h1>???</h1>
-            <p><span>👀 Bald...</span></p>
-        </a>
+<section id="page-content">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <div class="page-wrapper">
+            <div class="tutorial-steps">
+                <div class="tutorial-step">
+                    <div class="text">
+                        <h1><span>Schritt 1</span>Du benötigst Minecraft</h1>
+                        <p>
+                            Falls du bereits Minecraft hast, kannst du diesen Schritt überspringen. Falls nicht, dann geh auf minecraft.net und lade es herunter. Du kannst mit <u>Java</u> und <u>Bedrock</u> joinen. Achtung!Wir unterstützen keine gecrackten Gamelauncher!                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="https://www.minecraft.net/content/dam/games/minecraft/key-art/SUPM_Game-Image_One-Vanilla_672x400.jpg?imwidth=366"><p>Bild von Minecraft.net</p>
+                    </div>
+                </div>
+                <div class="tutorial-step right">
+                    <div class="text">
+                        <h1><span>Schritt 2</span>Spiel <span>starten</span></h1>
+                        <p>
+                            Starte dein Game in der <u>neusten</u> Vollversion! Bedrock spieler müssen ihr Spiel über den Play Store / App Store Aktualisieren.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="https://www.minecraft.net/content/dam/games/minecraft/key-art/Play_With_Friends_Online_672x360.png"><p>Bild von Minecraft.net</p>
+                    </div>
+                </div>
+                <div class="tutorial-step">
+                    <div class="text">
+                        <h1><span>Schritt 3</span>Mitspielen <span>auf</span> Galaxyverse.</h1>
+                        <p>
+                            Auf der <u>Java</u> Edition musst du im Multiplayermodus die IP: <u>Galaxyverse.de</u> eintragen. <br> Auf der Bedrock musst du einen Angemeldeten Account haben. Dann kannst du ebenfalls in den Mehrspielermodus gehen und die IP: galaxyverse.de eintragen.
+                         </p>
+                    </div>
+                    <div class="image">
+                        <img src="ip.png">
+                    </div>
+                </div>
+                <div class="tutorial-step right">
+                    <div class="text">
+                        <h1><span>Schritt 4</span>Mitspielen!</h1>
+                        <p>
+                            Falls Du Starthilfe benötigst, Schau auf unserem Discord Server vorbei! 
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="join.png">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <section id="footer" class="bg-black">
     <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">
-                <a href="mailto:info@galaxyverse.de" class="text-xs leading-6 text-gray-500 hover:text-gray-200">
+                <a href="mailto:support@galaxyverse.de" class="text-xs leading-6 text-gray-500 hover:text-gray-200">
                     Support
                 </a>
             </div>
